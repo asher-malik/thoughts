@@ -1,0 +1,28 @@
+{% extends 'journal/navbar.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+    <br>
+    <div class="container bg-white shadow-md p-5 form-layout">
+        <h3>Delete your account</h3>
+        <p>Are you sure that you want to delete your account?</p>
+        <br>
+        <form action="" method="POST">
+            <button class="btn btn-outline-danger btn-md w-100 btn-block p-3" type="submit">&nbsp;Yes, Delete account</button>
+        </form>
+    </div>
+
+    <br>
+
+    <div class="container bg-white shadow-md p-5 form-layout">
+        <h3>Delete your account</h3>
+
+        <br>
+
+        <a href="{% url 'profile-management' %}">Return to profile management</a>
+
+    </div>
+
+    <br>
+
+{% endblock %}
